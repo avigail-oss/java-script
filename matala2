@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html Lang="ang">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*q1*/
+        //הגדרת משתנים
+        var num1 = prompt("Enter first number");
+        //קלט של המשתנה
+        console.log(num1, typeof(num1));
+
+        //בודקים אם המספר הוא גדול מ928 או קטן מ532
+        if (num1 > 928 || num1 < 532) {
+            //הצגה של המספר
+            console.log(num1);
+        } else {
+            console.log();
+        }
+
+        /*q2*/
+        //הגדרת 3 משתנים
+        var num1 = prompt("Enter first number");
+        var num2 = prompt("Enter second number");
+        var num3 = prompt("Enter third number");
+        //קליטת של 3 משתנים
+        console.log(num1, typeof(num1));
+        console.log(num2, typeof(num2));
+        console.log(num3, typeof(num3));
+        //בדיקה אם המשתנה השני גדול מהראשון והשלישי גדול מהשני
+        if (num2 > num1 && num3 > num2) {
+
+            //הדפסה של המילה increasing
+            console.log("Increasing");
+
+        } else {
+            console.log();
+        }
+
+        /*q3*/
+        //הגדרה של 2 משתנים
+        var num1 = prompt("Enter first number");
+        var num2 = prompt("Enter second number");
+        //קלט
+        console.log(num1, typeof(num1));
+        console.log(num2, typeof(num2));
+        //בדיקה שהמשתנה השני גדול מהראשון
+        if (num2 > num1) {
+            //הדפסה של המילה growing
+            console.log("Growing");
+        } else {
+            console.log();
+        }
+
+
+        /*q4*/
+        //הגדרתי משתנה 
+        var z = Number(prompt("Enter a number: "));
+        //בודקים אם הוא זוגי
+        console.log((z % 2 == 0) ? "even" : "odd");
+
+
+        /*q5*/
+        //הגדרת משתנים
+        var num1 = prompt("Enter first number");
+        var num2 = prompt("Enter second number");
+        //קלט
+        console.log(num1, typeof(num1));
+        console.log(num2, typeof(num2));
+        //בודקים אם המשתנה הראשון יותר קטן מהשני
+        if (num1 < num2) {
+            //מדפיסים פה את הערך הקטן ביותר
+            console.log(num1);
+            console.log(num2);
+        } else {
+            //אם המשתנה הראשון יותר גדול אז מדפיסים את הערך הגדול ביותר
+            console.log(num2);
+            console.log(num1);
+        }
+
+        /*q6*/
+        //הגדרת משתנה
+        var num1 = prompt("Enter a number: ");
+        //קלט
+        console.log(num1, typeof(num1));
+
+        //בודקים אם הוא שלילי
+        if (num1 < 0) {
+            console.log("Shlili");
+        } else {
+            console.log();
+        }
+        //בודקים ם הוא חייובי
+        if (num1 > 0) {
+            console.log("Hiuvi");
+        } else {
+            console.log();
+        }
+        //בודקים אם הוא שווה ל0
+        if (num1 == 0) {
+            console.log("Efes");
+        } else {
+            console.log();
+        }
+    </script>
+</body>
+
+</html>
