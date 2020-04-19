@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html Lang="ang">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Q1.Reversed Number
+        var x = prompt("Enter a number : ", " ");
+
+        function ReversedNumber(x, r) {
+            if (!x) return r;
+            r = (r ? r * 10 : 0) + x % 10;
+            return ReversedNumber(Math.floor(x / 10), r);
+
+        }
+        console.log(ReversedNumber(x));
+
+        //Q2.Prime Number
+        var num = prompt("Enter a Number : ", " ");
+
+        function PrimeNumber(num) {
+            var result = true;
+            for (var i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    result = false;
+                    break;
+                }
+
+            }
+            return result;
+        }
+        console.log(PrimeNumber(num));
+
+        //Q3.TypeOf
+        function getParamType(p) {
+            return typeof(p);
+        }
+
+        console.log(getParamType(2));
+        console.log(getParamType("Bob"));
+        console.log(getParamType(true));
+        console.log(getParamType(undefined));
+        console.log(getParamType([1, 2, 3]));
+        console.log(getParamType());
+
+        //Q4 Current Value
+        var Value = prompt("Enter A Value :", "");
+
+        function DollarToShekel(Value) {
+            //1$ = 3.5Nis
+            return Value * 3.5;
+        }
+        console.log(DollarToShekel(Value));
+
+        var Current = prompt("Enter a current value :", "");
+
+        function ShekelToDollar(Current) {
+            //1Nis = 0.28$;
+            return Current * 0.28;
+
+        }
+        console.log(ShekelToDollar(Current));
+
+        var y = prompt("Enter a value :", " ");
+
+        function EuroToShekel(y) {
+            //1Euro = 3.9Nis
+            return y * 3.9;
+        }
+        console.log(EuroToShekel(y));
+
+        var A = prompt("Enter a value :", " ");
+
+        function ShekelToEuro(A) {
+            //1Nis = 0.26Euro
+            return A * 0.26;
+        }
+        console.log(ShekelToEuro(A));
+    </script>
+</body>
+
+</html>
